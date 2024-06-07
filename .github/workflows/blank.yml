@@ -20,4 +20,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: rapport
-          path: gitactPost/rapport
+          path: C:\Users\nicolas\Documents\gitactPost\rapport
