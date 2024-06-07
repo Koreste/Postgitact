@@ -15,4 +15,9 @@ jobs:
       - name: Run API tests
         run: |
           postman collection run "34662873-cc81078c-ce00-47f8-b343-b662c0c06325" -e "34662873-1ff39dea-329b-4de1-a250-87944d0a8564"
-    
+      - name: publish report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          path: ./newman/*.html
+          name: html-report
